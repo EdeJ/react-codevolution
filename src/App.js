@@ -5,11 +5,17 @@ import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <EventBind />
+      {/* <FunctionClick />
+      <ClassClick /> */}
+      {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet name='Emiel' heroName='Batman'>
         <p>this is children props</p>
@@ -19,8 +25,9 @@ function App() {
       </Greet>
       <Greet name='Clark' heroName='Wonder Woman' />
       <Welcome name='Emiel' heroName='Batman' />
-      <Welcome name='bob' heroName='superman' />
-      <Welcome name='Clark' heroName='Wonder Woman' /> */}
+      <Welcome name='bob' heroName='superman' /> */}
+      {/* <Welcome name='Clark' heroName='Wonder Woman' />
+      <Greet name='Clark' heroName='Wonder Woman' /> */}
     </div>
   );
 }

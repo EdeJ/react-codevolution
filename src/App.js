@@ -28,12 +28,28 @@ import { createPortal } from 'react-dom';
 import PortalDemo from './components/PortalDemo';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import User from './components/User';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import Counter2 from './components/Counter2';
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter name='Emiel' />
-      <HoverCounter />
+      <Counter2
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <Counter2
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      {/* <ClickCounterTwo name='Emiel' />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => isLoggedIn ? 'Emiel' : 'Guest'} /> */}
+      {/* <HoverCounter /> */}
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
